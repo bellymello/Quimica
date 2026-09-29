@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'Muse';
+    src: url('fontes/Poppins-Black.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FAF7FD;
+}
+
+
+.header {
+    position: relative;
+}
+
+.header img {
+    border: none;
+    height: 410px;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    margin-bottom: 100px;
+    border-radius: 0 0 67px 67px;
+}
+
+.header h1 {
+    position: absolute;
+    color: #4A1A6B;
+    left: 26%;
+    top: 50%;
+    font-size: 36px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0px 1px 4px #5f4a8b;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.header p {
+    font-style: italic;
+    font-size: 22px;
+    position: absolute;
+    color: #290087;
+    left: 17%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0px 1px 4px #1f1f1e;
+    letter-spacing: 2px;
+}
+
+
+.selo {
+    position: absolute;
+    left: 16%;
+    top: 14%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #4A1A6B;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid #C9A3E0;
+    padding: 5px 14px;
+    border-radius: 20px;
+}
+
+.header nav {
+    position: absolute;
+    top: 22px;
+    right: 40px;
+    display: flex;
+    gap: 6px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 6px 10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(107, 47, 165, 0.18);
+}
+
+.header nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4A1A6B;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header nav a:hover {
+    background-color: #6B2FA5;
+    color: #ffff;
+}
+
+.mae {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 90px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.imagemradonio img {
+    width: 260px;
+    height: 279px;
+    border: 2px solid #C9A3E0;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.mae .texto {
+    font-size: 22px;
+    color: #47073c;
+    box-sizing: content-box;
+    background-color: #ffff;
+    border-radius: 5px;
+    width: 240px;
+    min-height: 244px;
+    padding: 15px;
+    border: 2px solid #C9A3E0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+.mae .texto p {
+    text-align: justify;
+}
+
+.imagemradonio:hover, .texto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(107, 47, 165, 0.18);
+}
+
+.divisor {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #9B59B6, transparent);
+    border: none;
+    margin: 40px 0;
+}
+
+
+
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffff;
+    border: 1px solid #E8D9F3;
+    border-top: 5px solid #6B2FA5;
+    border-radius: 14px;
+    padding: 32px 36px;
+    box-shadow: 0 4px 12px rgba(107, 47, 165, 0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(107, 47, 165, 0.18);
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #4A1A6B;
+    margin-bottom: 16px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3A3A3A;
+    margin-bottom: 8px;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+.card strong {
+    color: #6B2FA5;
+    font-weight: 600;
+}
+
+.card ol {
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3A3A3A;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+
+.card.risco {
+    border-top-color: #4A1A6B;
+    background-color: #F3ECFA;
+}
+
+
+.fontes {
+    padding: 0 20px;
+    margin-top: 60px;
+}
+
+.fontes-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffff;
+    border: 2px solid #C9A3E0;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(107, 47, 165, 0.10);
+}
+
+.fontes h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #4A1A6B;
+    margin-bottom: 8px;
+}
+
+.fontes-intro {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #6B2FA5;
+    margin-bottom: 30px;
+}
+
+.fontes-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.fonte {
+    display: block;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F3ECFA;
+    border: 1px solid #E8D9F3;
+    border-left: 5px solid #6B2FA5;
+    border-radius: 10px;
+    padding: 18px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.fonte:hover {
+    transform: translateY(-4px);
+    background-color: #E8D9F3;
+    box-shadow: 0 8px 20px rgba(107, 47, 165, 0.18);
+}
+
+.fonte h3 {
+    font-size: 16px;
+    color: #4A1A6B;
+    margin-bottom: 6px;
+}
+
+.fonte p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #3A3A3A;
+}
+
+.fonte span {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6B2FA5;
+}
+
+
+.footer {
+    background-color: #4A1A6B;
+    color: #FAF7FD;
+    font-family: 'Montserrat', sans-serif;
+    padding: 45px 30px 18px;
+    margin-top: 60px;
+    border-radius: 67px 67px 0 0;
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-conteudo > div {
+    max-width: 280px;
+}
+
+.footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #C9A3E0;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 4px 0;
+}
+
+.footer-fim {
+    text-align: center;
+    font-size: 12px !important;
+    opacity: 0.75;
+    border-top: 1px solid rgba(201, 163, 224, 0.35);
+    margin-top: 30px !important;
+    padding-top: 15px;
+}
+
+/*responsivo ne*/
+@media (max-width: 900px) {
+
+    .header img {
+        height: 300px;
+        margin-bottom: 60px;
+        border-radius: 0 0 40px 40px;
+    }
+
+    .header nav {
+        top: 14px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+
+    .header nav a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .selo {
+        left: 50%;
+        top: 88px;
+        font-size: 11px;
+    }
+
+    .header h1 {
+        left: 50%;
+        top: 165px;
+        width: 90%;
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    .header p {
+        left: 50%;
+        top: 225px;
+        width: 90%;
+        font-size: 17px;
+    }
+
+    .mae {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-bottom: 60px;
+        gap: 24px;
+    }
+
+    .mae .texto {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 320px;
+        min-height: auto;
+        font-size: 18px;
+    }
+
+    .caracteristicas {
+        padding: 40px 16px;
+    }
+
+    .card {
+        padding: 24px 20px;
+    }
+
+    .card h3 {
+        font-size: 21px;
+    }
+
+    .card p,
+    .card ol {
+        font-size: 15px;
+    }
+
+    .fontes-container {
+        padding: 28px 18px;
+    }
+
+    .footer {
+        border-radius: 40px 40px 0 0;
+        padding: 35px 20px 18px;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .footer-conteudo > div {
+        max-width: 100%;
+    }
+}
+
