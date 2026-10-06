@@ -181,9 +181,6 @@ body {
     margin-bottom: 8px;
 }
 
-.card p:last-child {
-    margin-bottom: 0;
-}
 
 .card strong {
     color: #6B2FA5;
@@ -213,7 +210,7 @@ body {
     margin-top: 60px;
 }
 
-.fontes-container {
+.fontescontainer {
     max-width: 1000px;
     margin: 0 auto;
     background-color: #ffff;
@@ -233,7 +230,7 @@ body {
     margin-bottom: 8px;
 }
 
-.fontes-intro {
+.fontesintro {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-align: center;
@@ -241,7 +238,7 @@ body {
     margin-bottom: 30px;
 }
 
-.fontes-lista {
+.fonteslista {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
@@ -295,7 +292,7 @@ body {
     border-radius: 67px 67px 0 0;
 }
 
-.footer-conteudo {
+.footerconteudo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -304,7 +301,7 @@ body {
     margin: 0 auto;
 }
 
-.footer-conteudo > div {
+.footerconteudo > div {
     max-width: 280px;
 }
 
@@ -322,7 +319,7 @@ body {
     margin: 4px 0;
 }
 
-.footer-fim {
+.footerfim {
     text-align: center;
     font-size: 12px !important;
     opacity: 0.75;
@@ -406,7 +403,7 @@ body {
         font-size: 15px;
     }
 
-    .fontes-container {
+    .fontescontainer {
         padding: 28px 18px;
     }
 
@@ -415,13 +412,13 @@ body {
         padding: 35px 20px 18px;
     }
 
-    .footer-conteudo {
+    .footerconteudo {
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
     }
 
-    .footer-conteudo > div {
+    .footerconteudo > div {
         max-width: 100%;
     }
 }
